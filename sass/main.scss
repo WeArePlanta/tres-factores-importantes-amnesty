@@ -1,4 +1,5 @@
-body { background-color: #f5f3ef;
+body {
+    background-color: #f5f3ef;
     * {
         background-color: #f5f3ef;
     }
@@ -6,17 +7,31 @@ body { background-color: #f5f3ef;
         font-size: 20px;
         text-transform: uppercase;
         text-align: center;
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+        @media (min-width: 1200px) {
+            font-size: 32px;
+        }
     }
 
     img {
         width: 160px;
         margin: 0 auto;
         display: block;
+        @media (min-width: 1200px) {
+            width: 400px;
+        }
     }
 
     p {
         font-size: 16px;
         text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+        @media (min-width: 768px) {
+            font-size: 20px;
+        }
     }
 
     h5 {
@@ -103,11 +118,17 @@ body { background-color: #f5f3ef;
         margin: 0;
         padding: 0;
         position: absolute;
-        bottom: 7%;
+        bottom: 25%;
         left: 0;
         right: 0;
         text-align: center;
         z-index: 10;
+        @media (min-width: 768px) {
+            bottom: 32%;
+        }
+        @media (min-width: 1200px) {
+            bottom: 2%;
+        }
     }
 
     .carousel-indicators li {
